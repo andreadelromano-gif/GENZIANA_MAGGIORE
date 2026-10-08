@@ -36,3 +36,7 @@
 .footer nav[aria-label="Social"] a:hover::after{transform:translate(2px,-2px)}
 .footer nav[aria-label="Social"] a:focus-visible{outline:2px solid #e5b75c;outline-offset:3px}
 @media(max-width:800px){.footer nav[aria-label="Social"]{max-width:100%}}
+
+/* Email ufficiale — contatto visibile e cliccabile */
+.footer nav[aria-label="Informazioni"] a[href^="mailto:"]{text-transform:none;letter-spacing:.015em;overflow-wrap:anywhere;color:#dfc298;text-decoration:underline;text-decoration-color:rgba(223,194,152,.35);text-underline-offset:4px}
+.footer nav[aria-label="Informazioni"] a[href^="mailto:"]:hover,.footer nav[aria-label="Informazioni"] a[href^="mailto:"]:focus-visible{color:#f4d89d;text-decoration-color:currentColor}
