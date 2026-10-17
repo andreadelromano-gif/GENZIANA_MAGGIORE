@@ -3,39 +3,51 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="theme-color" content="#090907">
+  <meta name="theme-color" content="#090807">
+  <meta name="color-scheme" content="dark">
   <meta name="robots" content="noindex,nofollow">
   <meta name="description" content="MAGGIORE MCMXXXI — Le radici non si inventano. Scopri la nostra storia e le informazioni ambientali della bottiglia.">
   <title>Scopri MAGGIORE · Informazioni ambientali | MAGGIORE MCMXXXI</title>
   <style>
+    @import url("https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=Inter:wght@300;400;500;600&display=swap");
     :root{color-scheme:dark;--bg:#090907;--panel:#11100d;--gold:#c7a36a;--gold-lit:#ebcb8c;--ivory:#f2eade;--muted:#afa79b;--hair:rgba(213,173,104,.30)}
     *,*::before,*::after{box-sizing:border-box}
     html{scroll-behavior:smooth;scroll-padding-top:25px}
-    body{margin:0;min-width:320px;color:var(--ivory);background:var(--bg);font-family:Arial,Helvetica,sans-serif;-webkit-font-smoothing:antialiased}
+    body{margin:0;min-width:320px;color:var(--ivory);background:var(--bg);font-family:Inter,Arial,Helvetica,sans-serif;-webkit-font-smoothing:antialiased}
     body::before{content:"";position:fixed;inset:0;z-index:-1;pointer-events:none;opacity:.36;background:radial-gradient(ellipse 75% 43% at 78% 8%,rgba(129,91,40,.16),transparent 71%),radial-gradient(ellipse 56% 34% at 3% 72%,rgba(78,58,27,.11),transparent 75%)}
     a{color:inherit}a:focus-visible{outline:2px solid var(--gold-lit);outline-offset:5px}
     .shell{max-width:1100px;margin:0 auto;padding:0 34px}
     .topline{height:4px;background:linear-gradient(90deg,transparent 0%,#9d763d 24%,#e6c68b 49%,#79552b 74%,transparent 100%)}
-    .masthead{display:flex;align-items:center;justify-content:space-between;gap:20px;padding-top:35px;padding-bottom:23px;border-bottom:1px solid var(--hair)}
-    .wordmark{font-family:Georgia,'Times New Roman',serif;text-decoration:none;display:inline-flex;flex-direction:column;gap:6px;align-items:center;line-height:1;white-space:nowrap}
-    .wordmark strong{font-size:clamp(24px,3vw,37px);font-weight:normal;letter-spacing:.20em;color:var(--gold-lit);padding-left:.20em}
-    .wordmark span{font-size:11px;letter-spacing:.42em;padding-left:.42em;color:#d5c2a2}
+    .masthead{display:flex;align-items:center;justify-content:space-between;gap:20px;padding-top:24px;padding-bottom:21px;border-bottom:1px solid var(--hair)}
+    .brand-lockup{display:inline-flex;gap:15px;align-items:center;text-decoration:none}
+    .brand-symbol{display:block;flex:none;width:62px;height:62px;object-fit:contain}
+    .wordmark{font-family:'Cormorant Garamond',Georgia,serif;text-decoration:none;display:inline-flex;flex-direction:column;gap:5px;align-items:flex-start;line-height:1;white-space:nowrap}
+    .wordmark strong{font-size:clamp(25px,3vw,39px);font-weight:500;letter-spacing:.10em;color:var(--gold-lit)}
+    .wordmark span{font-family:Inter,Arial,sans-serif;font-size:10px;letter-spacing:.39em;padding-left:.05em;color:#d5c2a2}
+    .brand-lockup:hover .wordmark strong{color:#f0d6aa}
     .origin{font-size:10px;line-height:1.7;letter-spacing:.24em;color:#b4a792;text-align:right;text-transform:uppercase}
-    .hero{position:relative;display:grid;grid-template-columns:minmax(0,1fr) 285px;align-items:center;gap:15px;min-height:410px;padding-top:44px;padding-bottom:38px;isolation:isolate}
-    .hero::before{content:"";position:absolute;pointer-events:none;z-index:-1;right:3%;top:8%;width:390px;height:330px;background:radial-gradient(ellipse,rgba(174,117,52,.16),rgba(90,65,30,.05) 40%,transparent 72%);filter:blur(9px)}
+    .hero{position:relative;display:grid;grid-template-columns:minmax(0,1fr) 285px;align-items:center;gap:15px;min-height:445px;padding-top:47px;padding-bottom:47px;isolation:isolate}
+    .hero::before{content:"";position:absolute;pointer-events:none;z-index:-1;right:-3%;top:-12%;width:590px;height:490px;background:radial-gradient(ellipse at 65% 45%,rgba(184,122,46,.20),rgba(87,58,25,.08) 38%,transparent 72%);filter:blur(13px)}
+    .hero::after{content:"";position:absolute;right:17px;top:48px;bottom:46px;width:1px;background:linear-gradient(transparent,rgba(215,165,95,.2),transparent);pointer-events:none}
+    .hero-copy{position:relative;z-index:2;animation:quiet-reveal .75s ease both}
+    .hero-stamp{display:inline-flex;align-items:center;gap:12px;color:#c9b28d;font-size:9px;letter-spacing:.27em;text-transform:uppercase;margin-top:29px}
+    .hero-stamp::before{content:"";width:27px;height:1px;background:var(--gold)}
+    .hero-stamp span{color:var(--gold-lit)}
+    @keyframes quiet-reveal{from{opacity:0;transform:translateY(11px)}to{opacity:1;transform:translateY(0)}}
     .eyebrow{display:flex;align-items:center;gap:14px;font-size:10px;letter-spacing:.28em;text-transform:uppercase;color:var(--gold)}
     .eyebrow::before{content:"";width:28px;height:1px;background:var(--gold)}
     h1,h2,h3,p{margin-top:0}
-    .hero h1{max-width:710px;margin:26px 0 20px;font-family:Georgia,'Times New Roman',serif;font-weight:normal;font-size:clamp(42px,6.5vw,80px);line-height:1.025;letter-spacing:-.035em}
+    .hero h1{max-width:710px;margin:26px 0 20px;font-family:'Cormorant Garamond',Georgia,serif;font-weight:500;font-size:clamp(50px,7.5vw,96px);line-height:.95;letter-spacing:-.032em}
     .hero h1 em{font-style:italic;color:var(--gold-lit)}
-    .hero p{max-width:470px;margin:0;color:#bfb5a6;font-family:Georgia,'Times New Roman',serif;font-size:clamp(15px,1.8vw,19px);line-height:1.8}
-    .hero-media{position:relative;display:flex;justify-content:center;align-items:center;max-height:400px;height:355px}
-    .hero-media::before{content:"";position:absolute;width:65%;height:70%;border:1px solid rgba(199,163,106,.17);border-radius:50%;filter:blur(.2px);transform:scaleX(.85)}
+    .hero-copy>p:not(.hero-stamp){max-width:470px;margin:0;color:#bfb5a6;font-family:'Cormorant Garamond',Georgia,serif;font-size:clamp(18px,2vw,24px);line-height:1.45}
+    .hero-media{position:relative;display:flex;justify-content:center;align-items:center;max-height:410px;height:365px;animation:quiet-reveal 1s .15s ease both}
+    .hero-media::after{content:"50 CL  ·  26% VOL";position:absolute;bottom:-3px;left:0;right:0;text-align:center;color:#c2a67a;font-size:9px;letter-spacing:.25em;white-space:nowrap}
+    .hero-media::before{content:"";position:absolute;width:84%;height:74%;border:1px solid rgba(199,163,106,.25);border-radius:50%;box-shadow:0 0 90px 16px rgba(128,82,34,.12);transform:scaleX(.84)}
     .hero-media img{position:relative;z-index:1;display:block;max-width:100%;max-height:100%;object-fit:contain;filter:drop-shadow(0 15px 25px rgba(0,0,0,.65))}
     .separator{height:1px;background:linear-gradient(90deg,transparent,var(--hair) 12%,var(--hair) 85%,transparent)}
     .selection-heading{display:flex;justify-content:space-between;align-items:end;gap:20px;padding:38px 0 20px}
     .micro{color:var(--gold);font-size:10px;letter-spacing:.27em;text-transform:uppercase;font-weight:500}
-    .selection-heading h2{margin:7px 0 0;color:var(--ivory);font:normal clamp(23px,3vw,32px)/1.3 Georgia,'Times New Roman',serif}
+    .selection-heading h2{margin:7px 0 0;color:var(--ivory);font:500 clamp(28px,3.4vw,38px)/1.15 'Cormorant Garamond',Georgia,serif}
     .selection-heading .aside{font-size:11px;color:#8c8275;letter-spacing:.13em;text-transform:uppercase;white-space:nowrap}
     .cards{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin:0 0 95px}
     .card{min-height:205px;display:flex;flex-direction:column;justify-content:space-between;padding:26px 28px 24px;text-decoration:none;background:linear-gradient(140deg,rgba(207,160,88,.066),rgba(255,255,255,.008) 62%);border:1px solid rgba(199,163,106,.42);position:relative;overflow:hidden;transition:border-color .25s,background-color .25s,transform .25s}
@@ -44,7 +56,7 @@
     .card-top{display:flex;justify-content:space-between;align-items:start;gap:18px}
     .number{font-size:11px;letter-spacing:.2em;color:var(--gold);font-family:Georgia,serif}
     .arrow{width:36px;height:36px;display:grid;place-items:center;border:1px solid rgba(199,163,106,.35);border-radius:50%;color:var(--gold-lit);font-size:20px;font-weight:300}
-    .card h3{font-family:Georgia,'Times New Roman',serif;font-size:clamp(20px,2.35vw,27px);line-height:1.16;font-weight:normal;letter-spacing:.02em;margin:0 0 8px}
+    .card h3{font-family:'Cormorant Garamond',Georgia,serif;font-size:clamp(25px,3vw,34px);line-height:1.10;font-weight:500;letter-spacing:.01em;margin:0 0 8px}
     .card p{font-size:12px;line-height:1.65;color:var(--muted);letter-spacing:.01em;margin:0}
     .environment{scroll-margin-top:20px;padding-top:38px;border-top:1px solid var(--hair)}
     .environment-header{display:grid;grid-template-columns:minmax(0,1fr) minmax(150px,340px);align-items:end;gap:35px;margin:0 0 30px}
@@ -69,26 +81,26 @@
     .footer a{font-size:11px;color:#d4bea0;text-decoration-color:rgba(199,163,106,.4);text-underline-offset:4px}
     .footer-right small{font-size:10px;color:#897d6c}
     @media(max-width:680px){
-      .shell{padding:0 22px}.masthead{padding-top:27px;padding-bottom:22px}.origin{display:none}
-      .hero{grid-template-columns:minmax(0,1fr) 130px;gap:4px;min-height:335px;padding:44px 0 38px}
-      .hero h1{font-size:clamp(38px,10.4vw,58px);margin:23px 0 18px;max-width:370px}
-      .hero p{font-size:14px;line-height:1.6;max-width:300px}
-      .hero-media{align-self:center;height:235px;max-height:235px;margin-right:-12px;opacity:.87}
+      .shell{padding:0 22px}.masthead{padding-top:17px;padding-bottom:15px}.brand-lockup{gap:10px}.brand-symbol{width:52px;height:52px}.origin{display:none}
+      .hero{grid-template-columns:minmax(0,1fr) 130px;gap:4px;min-height:350px;padding:38px 0 42px}.hero::after{display:none}.hero-stamp{font-size:8px;letter-spacing:.16em;gap:8px;margin-top:24px}.hero-stamp::before{width:16px}
+      .hero h1{font-size:clamp(44px,11vw,69px);margin:21px 0 17px;max-width:370px}
+      .hero-copy>p:not(.hero-stamp){font-size:17px;line-height:1.35;max-width:285px}
+      .hero-media{align-self:center;height:240px;max-height:240px;margin-right:-12px}.hero-media::after{bottom:-11px;font-size:8px;letter-spacing:.10em}
       .selection-heading{padding:32px 0 18px}.selection-heading .aside{display:none}
       .cards{grid-template-columns:1fr;gap:12px;margin-bottom:75px}.card{min-height:155px;padding:21px 24px 19px}
       .environment-header{grid-template-columns:1fr;gap:8px;margin-bottom:22px}.environment-header p{max-width:420px}
       .material{grid-template-columns:22px minmax(0,1fr) minmax(96px,145px);gap:10px;padding:21px 0}.material h3{font-size:20px}.code{font-size:17px}
       .footer{margin-top:75px;flex-direction:column;align-items:start;gap:23px}.footer-right{text-align:left}
     }
-    @media(max-width:380px){.shell{padding:0 17px}.hero{grid-template-columns:minmax(0,1fr) 93px}.hero h1{font-size:39px}.hero-media{height:180px}.material{grid-template-columns:20px minmax(0,1fr) 99px}.code{font-size:16px}}
-    @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.card{transition:none}}
+    @media(max-width:380px){.shell{padding:0 17px}.hero{grid-template-columns:minmax(0,1fr) 99px}.hero h1{font-size:44px}.hero-media{height:190px}.material{grid-template-columns:20px minmax(0,1fr) 99px}.code{font-size:16px}}
+    @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.card{transition:none}.hero-copy,.hero-media{animation:none}}
 </style>
 </head>
 <body id="top">
   <div class="topline" aria-hidden="true"></div>
   <main class="shell">
     <header class="masthead">
-      <a class="wordmark" href="/" aria-label="MAGGIORE MCMXXXI — torna alla homepage"><strong>MAGGIORE</strong><span>MCMXXXI</span></a>
+      <a class="brand-lockup" href="/" aria-label="MAGGIORE MCMXXXI — torna alla homepage"><img class="brand-symbol" src="/favicon.svg" alt="" width="62" height="62"><span class="wordmark"><strong>MAGGIORE</strong><span>MCMXXXI</span></span></a>
       <span class="origin">Liquore di genziana<br>Abruzzo · Italia</span>
     </header>
     <section class="hero" aria-labelledby="hero-title">
@@ -96,6 +108,7 @@
         <span class="eyebrow">Una storia di famiglia</span>
         <h1 id="hero-title">Le radici<br>non si <em>inventano.</em></h1>
         <p>Una radice. Una tradizione di famiglia. Un liquore che racconta la nostra terra.</p>
+        <div class="hero-stamp" aria-label="Abruzzo, dal 1931"><span>1931</span> &mdash; Abruzzo</div>
       </div>
       <div class="hero-media" aria-hidden="true">
         <img src="/assets/bottiglia-maggiore-fronte-trasparente-ChmRY_3F.png" alt="" loading="eager">
