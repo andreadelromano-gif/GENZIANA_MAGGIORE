@@ -11,9 +11,9 @@
   <link rel="icon" href="/favicon.svg" type="image/svg+xml">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;1,400&family=Inter:wght@400;500&display=swap">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500&family=Cormorant+Garamond:ital,wght@0,400;0,500;1,400&family=Inter:wght@400;500&display=swap">
   <style>
-    :root{color-scheme:dark;--ink:#0c0b09;--paper:#eee8dc;--muted:#b5ad9f;--gold:#c2a36c;--rule:#393124;--serif:"Cormorant Garamond",Georgia,serif;--sans:Inter,Arial,sans-serif}
+    :root{color-scheme:dark;--ink:#0c0b09;--paper:#eee8dc;--muted:#b5ad9f;--gold:#c2a36c;--rule:#393124;--serif:"Cormorant Garamond",Georgia,serif;--caps:Cinzel,Georgia,serif;--sans:Inter,Arial,sans-serif}
     *,*::before,*::after{box-sizing:border-box}
     html{scroll-behavior:smooth;scroll-padding-top:24px}
     body{margin:0;background:var(--ink);color:var(--paper);font-family:var(--sans);-webkit-font-smoothing:antialiased}
@@ -22,13 +22,13 @@
     img,svg{display:block}
     h1,h2,h3,p{margin:0}
     .page{width:min(100%,704px);margin-inline:auto;padding:28px clamp(24px,6vw,64px) 26px}
-    .colophon{display:flex;align-items:center;justify-content:space-between;gap:20px;color:var(--muted);font-size:10px;line-height:1.6;letter-spacing:.16em;text-transform:uppercase}
+    .colophon{display:flex;align-items:center;justify-content:space-between;gap:20px;color:var(--muted);font-family:var(--caps);font-size:11px;line-height:1.6;letter-spacing:.1em;text-transform:uppercase}
     .colophon span:last-child{color:var(--gold)}
     .brand{display:flex;flex-direction:column;align-items:center;padding-top:30px;text-align:center}
     .brand-symbol{width:104px;height:104px;object-fit:contain}
     .brand-name{margin-top:12px;padding-left:.13em;color:var(--paper);font:500 48px/.98 var(--serif);letter-spacing:.13em}
-    .brand-year{margin-top:8px;padding-left:.32em;color:var(--gold);font:400 11px/1.5 var(--serif);letter-spacing:.32em}
-    .brand-kind{margin-top:14px;font-size:10px;line-height:1.6;letter-spacing:.2em;text-transform:uppercase;color:var(--muted)}
+    .brand-year{margin-top:8px;padding-left:.24em;color:var(--gold);font:400 11px/1.5 var(--caps);letter-spacing:.24em}
+    .brand-kind{margin-top:14px;font-family:var(--caps);font-size:11px;line-height:1.6;letter-spacing:.14em;text-transform:uppercase;color:var(--muted)}
     .opening{margin-top:32px;text-align:center}
     .opening h1{font:400 clamp(40px,6vw,53px)/1.02 var(--serif);letter-spacing:-.018em}
     .opening h1 em{color:var(--gold);font-weight:400}
@@ -58,7 +58,7 @@
     .material-code.pending{font:400 11px/1.6 var(--sans)}
     .environment-note{margin-top:19px;color:var(--muted);font-size:11px;line-height:1.8}
     .page-footer{display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:10px 18px;margin-top:25px;color:var(--muted);font-size:10px;line-height:1.8}
-    .product-facts{letter-spacing:.1em;text-transform:uppercase}
+    .product-facts{font-family:var(--caps);font-size:11px;letter-spacing:.08em;text-transform:uppercase}
     .page-footer a{min-height:44px;display:inline-flex;align-items:center;text-decoration-color:var(--rule);text-underline-offset:4px}
     .page-footer a:hover{color:var(--paper)}
     .preview-note{margin-top:12px;color:var(--muted);font-size:11px;line-height:1.7}
@@ -73,7 +73,7 @@
       .page-footer{margin-top:18px}
     }
     @media(max-width:359px){
-      .page{padding-inline:20px}.colophon{font-size:9px;gap:12px}.brand-name{font-size:38px}
+      .page{padding-inline:20px}.colophon{font-size:10px;gap:12px}.brand-name{font-size:38px}
       .route{grid-template-columns:23px minmax(0,1fr) 16px;gap:12px}
       .route-title{font-size:25px}.route-icon{width:23px}.material{gap:12px}
     }
