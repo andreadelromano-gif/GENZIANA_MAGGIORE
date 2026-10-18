@@ -2,216 +2,155 @@
 <html lang="it">
 <head>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width,initial-scale=1">
-  <meta name="theme-color" content="#0b0907">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#0c0b09">
   <meta name="color-scheme" content="dark">
-  <meta name="robots" content="noindex,nofollow">
-  <meta name="description" content="MAGGIORE MCMXXXI, liquore di genziana. Scopri la storia di famiglia e le informazioni ambientali della bottiglia.">
+  <meta name="robots" content="noindex, nofollow">
+  <meta name="description" content="Entra nel mondo di MAGGIORE MCMXXXI, liquore di genziana abruzzese. La nostra storia e le informazioni ambientali della bottiglia.">
   <title>Scopri MAGGIORE · MAGGIORE MCMXXXI</title>
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
-  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;1,400&family=Inter:wght@400;500&display=swap">
   <style>
-    :root {
-      color-scheme: dark;
-      --bg:#0b0907;
-      --surface:#14110d;
-      --cream:#f0e7d8;
-      --cream-soft:#cbbfaf;
-      --gold:#d4b37b;
-      --gold-soft:#ae8f60;
-      --rule:rgba(203,175,125,.27);
-      --serif:"Cormorant Garamond",Georgia,serif;
-      --sans:Inter,Arial,sans-serif
-    }
+    :root{color-scheme:dark;--ink:#0c0b09;--paper:#eee8dc;--muted:#b5ad9f;--gold:#c2a36c;--rule:#393124;--serif:"Cormorant Garamond",Georgia,serif;--sans:Inter,Arial,sans-serif}
     *,*::before,*::after{box-sizing:border-box}
-    html{scroll-behavior:smooth;scroll-padding-top:30px}
-    body{margin:0;min-width:320px;background:var(--bg);color:var(--cream);font-family:var(--sans);-webkit-font-smoothing:antialiased}
+    html{scroll-behavior:smooth;scroll-padding-top:24px}
+    body{margin:0;background:var(--ink);color:var(--paper);font-family:var(--sans);-webkit-font-smoothing:antialiased}
     a{color:inherit}
-    a:focus-visible{outline:2px solid #f3d39e;outline-offset:5px}
-    img{display:block;max-width:100%}
-    h1,h2,h3,p,figure{margin:0}
-    .site{max-width:1120px;margin:0 auto;padding:0 clamp(22px,5vw,56px)}
-    .topline{height:1px;background:linear-gradient(90deg,transparent 6%,#af8b54 50%,transparent 94%)}
-    .header{display:flex;justify-content:space-between;align-items:center;gap:20px;min-height:112px;border-bottom:1px solid var(--rule)}
-    .identity{display:inline-flex;align-items:center;gap:15px;text-decoration:none;min-width:0}
-    .identity img{width:64px;height:64px;flex:none;object-fit:contain}
-    .identity-text{display:flex;flex-direction:column;gap:1px}
-    .identity strong{font:500 clamp(27px,3vw,36px)/.95 var(--serif);letter-spacing:.10em;color:#ecd19e}
-    .identity small{font:500 11px/1.5 var(--sans);letter-spacing:.34em;color:var(--cream-soft)}
-    .backlink{font-size:12px;font-weight:500;text-decoration:none;letter-spacing:.02em;border-bottom:1px solid var(--gold-soft);padding:8px 0;color:var(--cream-soft);white-space:nowrap}
-    .backlink:hover{color:var(--cream)}
-    .hero{position:relative;display:grid;grid-template-columns:minmax(0,1.45fr) minmax(230px,.7fr);align-items:center;gap:clamp(22px,4vw,72px);padding:clamp(58px,7vw,90px) 0 clamp(56px,6vw,78px)}
-    .hero:before{content:"";position:absolute;pointer-events:none;inset:0;background:radial-gradient(ellipse 42% 48% at 79% 44%,rgba(102,67,32,.17),transparent 76%);z-index:-1}
-    .kicker{display:flex;align-items:center;gap:14px;font-size:11px;font-weight:500;letter-spacing:.19em;text-transform:uppercase;color:var(--gold)}
-    .kicker:before{content:"";width:23px;height:1px;background:var(--gold-soft)}
-    .hero h1{font:500 clamp(68px,8vw,112px)/.86 var(--serif);letter-spacing:-.038em;margin:27px 0 29px}
-    .hero h1 em{font-weight:400;color:#dbb87e}
-    .hero .intro{max-width:540px;font-size:16px;line-height:1.85;color:var(--cream-soft)}
-    .hero .origin{margin-top:26px;font-size:11px;color:var(--gold-soft);letter-spacing:.13em;text-transform:uppercase}
-    .seal{display:flex;flex-direction:column;align-items:center;justify-content:center;gap:8px;min-height:360px;position:relative}
-    .seal:before{content:"";position:absolute;width:290px;height:290px;max-width:100%;border-radius:50%;border:1px solid rgba(194,153,95,.22);box-shadow:0 0 76px 14px rgba(142,85,26,.08)}
-    .seal img{width:min(79%,225px);height:auto;position:relative;filter:drop-shadow(0 12px 19px rgba(0,0,0,.28))}
-    .seal .seal-caption{position:absolute;bottom:2px;font:400 12px/1 var(--serif);color:var(--gold-soft);letter-spacing:.3em}
-    .pathways{border-top:1px solid var(--rule);padding:35px 0 75px}
-    .section-header{display:flex;justify-content:space-between;align-items:end;gap:20px;margin-bottom:24px}
-    .eyebrow{font-size:11px;font-weight:500;color:var(--gold-soft);letter-spacing:.18em;text-transform:uppercase}
-    .section-header h2{font:500 clamp(32px,4vw,48px)/1.04 var(--serif);margin-top:7px}
-    .section-header .helper{font-size:12px;color:#b6a995;padding-bottom:5px}
-    .route-list{border-top:1px solid var(--rule)}
-    .route{display:grid;grid-template-columns:45px 1fr 45px;align-items:center;gap:18px;min-height:118px;padding:20px 8px;text-decoration:none;border-bottom:1px solid var(--rule);transition:background-color .18s ease,color .18s ease}
-    .route:hover,.route:focus-visible{background:rgba(208,169,108,.065)}
-    .route-index{font:italic 19px/1 var(--serif);color:var(--gold-soft)}
-    .route strong{display:block;font:500 clamp(29px,3.5vw,40px)/1.04 var(--serif);color:var(--cream)}
-    .route small{display:block;font-size:13px;line-height:1.6;color:var(--cream-soft);margin-top:7px}
-    .route-arrow{font:400 31px/1 var(--serif);color:var(--gold);justify-self:end;transition:transform .18s ease}
-    .route:hover .route-arrow{transform:translate(3px,-3px)}
-    .environment{padding:60px 0 0;border-top:1px solid var(--rule)}
-    .environment-head{display:grid;grid-template-columns:1fr minmax(210px,340px);gap:50px;align-items:end;margin-bottom:32px}
-    .environment h2{font:500 clamp(41px,5vw,60px)/.96 var(--serif);margin-top:12px}
-    .environment-head p{color:var(--cream-soft);font-size:14px;line-height:1.8}
+    a:focus-visible,summary:focus-visible{outline:2px solid var(--gold);outline-offset:6px}
+    img,svg{display:block}
+    h1,h2,h3,p{margin:0}
+    .page{width:min(100%,704px);margin-inline:auto;padding:28px clamp(24px,6vw,64px) 26px}
+    .colophon{display:flex;align-items:center;justify-content:space-between;gap:20px;color:var(--muted);font-size:10px;line-height:1.6;letter-spacing:.16em;text-transform:uppercase}
+    .colophon span:last-child{color:var(--gold)}
+    .brand{display:flex;flex-direction:column;align-items:center;padding-top:30px;text-align:center}
+    .brand-symbol{width:104px;height:104px;object-fit:contain}
+    .brand-name{margin-top:12px;padding-left:.13em;color:var(--paper);font:500 48px/.98 var(--serif);letter-spacing:.13em}
+    .brand-year{margin-top:8px;padding-left:.32em;color:var(--gold);font:400 11px/1.5 var(--serif);letter-spacing:.32em}
+    .brand-kind{margin-top:14px;font-size:10px;line-height:1.6;letter-spacing:.2em;text-transform:uppercase;color:var(--muted)}
+    .opening{margin-top:32px;text-align:center}
+    .opening h1{font:400 clamp(40px,6vw,53px)/1.02 var(--serif);letter-spacing:-.018em}
+    .opening h1 em{color:var(--gold);font-weight:400}
+    .opening p{margin-top:16px;font-size:13px;line-height:1.75;color:var(--muted)}
+    .pathways{margin-top:36px;border-top:1px solid var(--rule)}
+    .route{display:grid;grid-template-columns:28px minmax(0,1fr) 18px;align-items:center;gap:20px;min-height:112px;padding:22px 0;text-decoration:none;cursor:pointer}
+    a.route{border-bottom:1px solid var(--rule)}
+    .route-icon{width:27px;height:29px;color:var(--gold)}
+    .route-title{display:block;font:400 30px/1.06 var(--serif);letter-spacing:-.015em;text-wrap:balance}
+    .route-description{display:block;margin-top:7px;font-size:12px;line-height:1.6;color:var(--muted)}
+    .route-arrow{width:18px;height:18px;color:var(--gold);transition:transform .2s ease}
+    a.route:hover .route-title,summary.route:hover .route-title{color:var(--gold)}
+    a.route:hover .route-arrow{transform:translate(3px,-3px)}
+    details{border-bottom:1px solid var(--rule)}
+    summary.route{list-style:none}
+    summary.route::-webkit-details-marker{display:none}
+    details[open]>summary .route-arrow{transform:rotate(180deg)}
+    .environment-panel{padding:8px 0 28px 48px}
+    .environment-intro{max-width:370px;margin-bottom:22px;color:var(--muted);font-size:12px;line-height:1.8}
     .materials{border-top:1px solid var(--rule)}
-    .material{display:grid;grid-template-columns:38px minmax(0,1fr) minmax(125px,220px);gap:15px;align-items:center;border-bottom:1px solid var(--rule);padding:24px 0}
-    .material .n{font:italic 16px var(--serif);color:var(--gold-soft);align-self:start;padding-top:4px}
-    .material h3{font:500 28px/1 var(--serif);margin-bottom:9px}
-    .material p{font-size:13px;color:var(--cream-soft);line-height:1.55}
-    .code{text-align:right}
-    .code strong{display:block;font:500 24px/1 var(--serif);color:var(--gold)}
-    .code span{display:block;font-size:13px;line-height:1.5;color:var(--cream-soft);margin-top:8px}
-    .code .pending{font:500 12px/1.5 var(--sans);color:#e0c397;letter-spacing:.02em}
-    .draft-note{margin-top:26px;padding:21px 24px;background:#19150f;border:1px solid var(--rule);color:var(--cream-soft);font-size:13px;line-height:1.8}
-    .draft-note strong{color:var(--cream);font-weight:600}
-    .disclaimer{font-size:12px;color:var(--cream-soft);margin-top:17px;line-height:1.7}
-    .footer{display:flex;justify-content:space-between;align-items:end;gap:25px;padding:36px 0 46px;margin-top:95px;border-top:1px solid var(--rule)}
-    .footer-name{font:500 23px/1.1 var(--serif);color:var(--gold)}
-    .footer-name small{display:block;font:500 11px/1.4 var(--sans);color:var(--cream-soft);letter-spacing:.13em;margin-top:9px}
-    .footer a{color:var(--cream-soft);text-underline-offset:4px;font-size:12px}
-    .footer a:hover{color:var(--cream)}
-    @media(max-width:800px){
-      .header{min-height:94px}
-      .hero{grid-template-columns:minmax(0,1fr) 170px;gap:10px;padding:65px 0 54px}
-      .hero h1{font-size:clamp(58px,9vw,79px)}
-      .seal{min-height:280px}
-      .seal:before{width:178px;height:178px}
-      .seal img{width:160px}
-      .environment-head{gap:25px}
+    .material{display:grid;grid-template-columns:minmax(0,1fr) minmax(110px,auto);align-items:start;gap:20px;padding:19px 0;border-bottom:1px solid var(--rule)}
+    .material h3{font:400 24px/1.15 var(--serif)}
+    .material-description{margin-top:5px;color:var(--muted);font-size:11px;line-height:1.6}
+    .material-result{text-align:right}
+    .material-code{color:var(--gold);font:400 21px/1.25 var(--serif)}
+    .material-destination{margin-top:5px;color:var(--muted);font-size:11px;line-height:1.6}
+    .material-code.pending{font:400 11px/1.6 var(--sans)}
+    .environment-note{margin-top:19px;color:var(--muted);font-size:11px;line-height:1.8}
+    .page-footer{display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:10px 18px;margin-top:25px;color:var(--muted);font-size:10px;line-height:1.8}
+    .product-facts{letter-spacing:.1em;text-transform:uppercase}
+    .page-footer a{min-height:44px;display:inline-flex;align-items:center;text-decoration-color:var(--rule);text-underline-offset:4px}
+    .page-footer a:hover{color:var(--paper)}
+    .preview-note{margin-top:12px;color:var(--muted);font-size:11px;line-height:1.7}
+    @media(max-width:600px){
+      .page{padding-top:22px}.brand{padding-top:24px}
+      .brand-symbol{width:86px;height:86px}.brand-name{font-size:42px;margin-top:10px}
+      .brand-year{margin-top:6px}.brand-kind{margin-top:10px}
+      .opening{margin-top:27px}.opening h1{font-size:clamp(36px,10.3vw,46px)}
+      .opening p{margin-top:14px;font-size:12px}.pathways{margin-top:30px}
+      .route{min-height:102px;gap:15px;padding:21px 0}.route-title{font-size:27px}
+      .route-description{font-size:11px;margin-top:6px}.environment-panel{padding-left:0}
+      .page-footer{margin-top:18px}
     }
-    @media(max-width:620px){
-      .header{min-height:84px}
-      .identity{gap:9px}.identity img{width:47px;height:47px}
-      .identity strong{font-size:25px}
-      .identity small{font-size:9px}
-      .backlink{font-size:11px}
-      .hero{grid-template-columns:minmax(0,1fr) 104px;gap:2px;padding:49px 0 52px}
-      .hero h1{font-size:clamp(53px,11vw,70px);margin:21px 0 19px}
-      .hero .intro{font-size:14px;line-height:1.7}
-      .hero .origin{font-size:10px;line-height:1.55;margin-top:21px}
-      .kicker{font-size:10px;letter-spacing:.12em;gap:8px}
-      .kicker:before{width:13px}
-      .seal{min-height:226px}
-      .seal:before{width:125px;height:125px}
-      .seal img{width:106px}
-      .seal .seal-caption{bottom:25px;font-size:9px}
-      .pathways{padding:29px 0 57px}
-      .section-header{margin-bottom:19px}
-      .section-header h2{font-size:35px}
-      .section-header .helper{display:none}
-      .route{grid-template-columns:31px minmax(0,1fr) 28px;gap:9px;min-height:113px;padding:18px 2px}
-      .route strong{font-size:30px}
-      .route small{font-size:13px}
-      .route-arrow{font-size:26px}
-      .environment{padding-top:42px}
-      .environment-head{grid-template-columns:1fr;gap:18px}
-      .environment h2{font-size:47px}
-      .environment-head p{font-size:13px;line-height:1.7}
-      .material{grid-template-columns:23px minmax(0,1fr) minmax(104px,125px);gap:8px;padding:20px 0}
-      .material h3{font-size:26px}
-      .material p{font-size:12px}
-      .code strong{font-size:20px}
-      .code span{font-size:12px}
-      .footer{flex-direction:column;align-items:start;gap:24px;margin-top:72px}
+    @media(max-width:359px){
+      .page{padding-inline:20px}.colophon{font-size:9px;gap:12px}.brand-name{font-size:38px}
+      .route{grid-template-columns:23px minmax(0,1fr) 16px;gap:12px}
+      .route-title{font-size:25px}.route-icon{width:23px}.material{gap:12px}
     }
-    @media(max-width:380px){
-      .site{padding:0 17px}
-      .identity strong{font-size:23px}
-      .backlink{font-size:10px}
-      .hero{grid-template-columns:minmax(0,1fr) 87px}
-      .hero h1{font-size:51px}
-      .seal:before{width:94px;height:94px}
-      .seal img{width:89px}
-      .seal .seal-caption{bottom:37px;font-size:8px}
-      .material{grid-template-columns:18px minmax(0,1fr) minmax(85px,110px)}
-      .code strong{font-size:18px}
-    }
-    @media(prefers-reduced-motion:reduce){
-      html{scroll-behavior:auto}
-      *,*::before,*::after{transition-duration:0.01ms!important;animation-duration:0.01ms!important}
-    }
+    @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.route-arrow{transition:none}}
   </style>
 </head>
 <body>
-  <div class="topline" aria-hidden="true"></div>
-  <main class="site">
-    <header class="header">
-      <a class="identity" href="/" aria-label="Vai alla homepage di MAGGIORE MCMXXXI">
-        <img src="/favicon.svg" alt="" width="64" height="64">
-        <span class="identity-text"><strong>MAGGIORE</strong><small>MCMXXXI</small></span>
-      </a>
-      <a class="backlink" href="/">Visita il sito <span aria-hidden="true">↗</span></a>
+  <main class="page">
+    <div class="colophon" aria-label="Abruzzo, Italia · Maggiore MCMXXXI">
+      <span>Abruzzo, Italia</span><span>MAGGIORE MCMXXXI</span>
+    </div>
+    <header class="brand">
+      <img class="brand-symbol" src="data:image/webp;base64,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" width="104" height="104" alt="Il simbolo originale di MAGGIORE: una M con radici" decoding="async">
+      <p class="brand-name">MAGGIORE</p>
+      <p class="brand-year">MCMXXXI</p>
+      <p class="brand-kind">Liquore di genziana</p>
     </header>
-
-    <section class="hero" aria-labelledby="hero-title">
-      <div class="hero-copy">
-        <p class="kicker">Liquore di genziana · Abruzzo</p>
-        <h1 id="hero-title">Le radici<br>non si <em>inventano.</em></h1>
-        <p class="intro">Maggiore Laudato preparava la genziana in casa e ne conservava la ricetta su un'agenda. Da quella storia di famiglia nasce MAGGIORE MCMXXXI.</p>
-        <p class="origin">MCMXXXI · 1931, anno di nascita di Maggiore</p>
-      </div>
-      <figure class="seal" aria-label="Il simbolo originale di MAGGIORE, una M con radici">
-        <img src="/favicon.svg" alt="Simbolo originale MAGGIORE: lettera M con radici" width="225" height="225" decoding="async">
-        <figcaption class="seal-caption">MAGGIORE MCMXXXI</figcaption>
-      </figure>
+    <section class="opening" aria-labelledby="page-title">
+      <h1 id="page-title">Le radici<br><em>non si inventano.</em></h1>
+      <p>Una ricetta di famiglia.<br>Una storia che continua in Abruzzo.</p>
     </section>
-
-    <section class="pathways" aria-labelledby="pathways-heading">
-      <div class="section-header">
-        <div><p class="eyebrow">Dalla bottiglia al nostro mondo</p><h2 id="pathways-heading">Cosa vuoi scoprire?</h2></div>
-        <p class="helper">Scegli dove andare</p>
-      </div>
-      <nav class="route-list" aria-label="Esplora MAGGIORE">
-        <a class="route" href="/#storia">
-          <span class="route-index" aria-hidden="true">01</span>
-          <span><strong>La storia di MAGGIORE</strong><small>La famiglia, la ricetta e le nostre radici in Abruzzo.</small></span>
-          <span class="route-arrow" aria-hidden="true">↗</span>
-        </a>
-        <a class="route" href="#ambientale">
-          <span class="route-index" aria-hidden="true">02</span>
-          <span><strong>Informazioni ambientali</strong><small>I materiali della bottiglia e la raccolta differenziata.</small></span>
-          <span class="route-arrow" aria-hidden="true">↓</span>
-        </a>
-      </nav>
+    <section class="pathways" aria-label="Scopri MAGGIORE e le informazioni ambientali">
+      <a class="route" href="https://maggioregenziana.it/">
+        <svg class="route-icon" viewBox="0 0 28 30" fill="none" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false">
+          <path d="M14 8.5c-3.5-2.2-7.1-2.9-11-2.9v17.1c3.9 0 7.5.7 11 2.9 3.5-2.2 7.1-2.9 11-2.9V5.6c-3.9 0-7.5.7-11 2.9Z"/>
+          <path d="M14 8.5v17.1M6.5 10.4c1.3.1 2.5.5 3.7 1M6.5 14.6c1.3.1 2.5.5 3.7 1M17.8 11.4c1.2-.5 2.4-.9 3.7-1"/>
+        </svg>
+        <span><span class="route-title">Scopri MAGGIORE</span><span class="route-description">La storia, il liquore, l’Abruzzo.</span></span>
+        <svg class="route-arrow" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M4 16 16 4M5 4h11v11"/></svg>
+      </a>
+      <details id="ambientale">
+        <summary class="route">
+          <svg class="route-icon" viewBox="0 0 28 30" fill="none" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false">
+            <path d="M11 3.5h6M11.5 3.5v6c0 2-4.5 3.4-4.5 6.7v9.3c0 1 .8 1.5 1.5 1.5h11c.7 0 1.5-.5 1.5-1.5v-9.3c0-3.3-4.5-4.7-4.5-6.7v-6M7 17h14M7 24h14M11 20.5h6"/>
+          </svg>
+          <span><span class="route-title">Informazioni ambientali</span><span class="route-description">I materiali e la raccolta differenziata.</span></span>
+          <svg class="route-arrow" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="m4 7 6 6 6-6"/></svg>
+        </summary>
+        <div class="environment-panel">
+          <p class="environment-intro">Le indicazioni per separare la bottiglia e i suoi componenti dopo l’uso.</p>
+          <div class="materials">
+            <article class="material" aria-labelledby="bottiglia-title">
+              <div><h3 id="bottiglia-title">Bottiglia</h3><p class="material-description">Vetro trasparente</p></div>
+              <div class="material-result"><p class="material-code">GL 70</p><p class="material-destination">Raccolta vetro</p></div>
+            </article>
+            <article class="material" aria-labelledby="capsula-title">
+              <div><h3 id="capsula-title">Capsula</h3><p class="material-description">PVC termoretraibile</p></div>
+              <div class="material-result"><p class="material-code">PVC 03</p><p class="material-destination">Raccolta plastica</p></div>
+            </article>
+            <article class="material" aria-labelledby="tappo-title">
+              <div><h3 id="tappo-title">Tappo</h3><p class="material-description">Sintetico a fungo</p></div>
+              <div class="material-result"><p class="material-code pending">Da confermare</p><p class="material-destination">Materiale in verifica</p></div>
+            </article>
+            <article class="material" aria-labelledby="versatore-title">
+              <div><h3 id="versatore-title">Versatore</h3><p class="material-description">Sistema di chiusura</p></div>
+              <div class="material-result"><p class="material-code pending">Da confermare</p><p class="material-destination">Materiale in verifica</p></div>
+            </article>
+          </div>
+          <p class="environment-note">Verifica sempre le disposizioni del tuo Comune per la raccolta differenziata.</p>
+        </div>
+      </details>
     </section>
-
-    <section class="environment" id="ambientale" aria-labelledby="ambientale-heading">
-      <div class="environment-head">
-        <div><p class="eyebrow">La bottiglia MAGGIORE</p><h2 id="ambientale-heading">Informazioni<br>ambientali</h2></div>
-        <p>Qui trovi le indicazioni per conferire la bottiglia e i suoi componenti dopo l'uso.</p>
-      </div>
-      <div class="materials">
-        <div class="material"><span class="n" aria-hidden="true">01</span><div><h3>Bottiglia</h3><p>Vetro trasparente</p></div><div class="code"><strong>GL 70</strong><span>Raccolta vetro</span></div></div>
-        <div class="material"><span class="n" aria-hidden="true">02</span><div><h3>Capsula</h3><p>PVC termoretraibile nero</p></div><div class="code"><strong>PVC 03</strong><span>Raccolta plastica</span></div></div>
-        <div class="material"><span class="n" aria-hidden="true">03</span><div><h3>Tappo</h3><p>Sintetico a fungo</p></div><div class="code"><strong class="pending">In verifica</strong><span>Attesa conferma del fornitore</span></div></div>
-        <div class="material"><span class="n" aria-hidden="true">04</span><div><h3>Versatore</h3><p>Integrato nel sistema di chiusura</p></div><div class="code"><strong class="pending">In verifica</strong><span>Attesa conferma del fornitore</span></div></div>
-      </div>
-      <p class="draft-note"><strong>Pagina di anteprima.</strong> Polsinelli deve ancora confermare i materiali del tappo e del versatore. Completeremo queste informazioni prima di pubblicare il QR definitivo sulle etichette.</p>
-      <p class="disclaimer">Verifica sempre le disposizioni del tuo Comune per la raccolta differenziata.</p>
-    </section>
-
-    <footer class="footer">
-      <div class="footer-name">MAGGIORE MCMXXXI<small>LE RADICI NON SI INVENTANO</small></div>
-      <a href="mailto:maggioregenziana@gmail.com">maggioregenziana@gmail.com</a>
+    <footer class="page-footer">
+      <p class="product-facts">Abruzzo · 50 cl · 26% vol</p>
+      <a href="mailto:maggioregenziana@gmail.com">Scrivici</a>
     </footer>
+    <p class="preview-note">Anteprima · Indicazioni per tappo e versatore in attesa di conferma.</p>
   </main>
+  <script>
+    (() => {
+      const environment = document.getElementById('ambientale');
+      const openEnvironmentFromHash = () => {
+        if (window.location.hash === '#ambientale') environment.open = true;
+      };
+      openEnvironmentFromHash();
+      window.addEventListener('hashchange', openEnvironmentFromHash);
+    })();
+  </script>
 </body>
 </html>
