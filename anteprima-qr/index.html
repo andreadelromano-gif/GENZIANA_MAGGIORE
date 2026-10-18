@@ -56,10 +56,11 @@
     .material-code{color:var(--gold);font:400 21px/1.25 var(--serif)}
     .material-destination{margin-top:5px;color:var(--muted);font-size:11px;line-height:1.6}
     .environment-note{margin-top:19px;color:var(--muted);font-size:11px;line-height:1.8}
-    .consumption-warnings{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px;list-style:none;margin:27px 0 0;padding:0 0 25px;border-bottom:1px solid var(--rule)}
+    .responsible-consumption{margin-top:26px;padding-bottom:25px;border-bottom:1px solid var(--rule)}
+    .responsibility-title{font:400 12px/1.7 var(--caps);letter-spacing:.07em;color:var(--muted);text-align:center}
+    .consumption-warnings{display:flex;align-items:center;justify-content:center;gap:clamp(26px,7vw,44px);list-style:none;margin:18px 0 0;padding:0}
     .consumption-warning{display:flex;flex-direction:column;align-items:center;text-align:center;min-width:0}
-    .warning-icon{width:42px;height:42px;color:var(--gold);margin-bottom:11px;flex:none}
-    .warning-label{max-width:145px;font-size:11px;line-height:1.65;color:var(--muted);text-wrap:balance}
+    .warning-icon{width:48px;height:48px;color:var(--gold);flex:none}
     .page-footer{display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:10px 18px;margin-top:25px;color:var(--muted);font-size:10px;line-height:1.8}
     .product-facts{font-family:var(--caps);font-size:11px;letter-spacing:.08em;text-transform:uppercase}
     .page-footer a{min-height:44px;display:inline-flex;align-items:center;text-decoration-color:var(--rule);text-underline-offset:4px}
@@ -134,37 +135,42 @@
         </div>
       </details>
     </section>
-    <ul class="consumption-warnings" aria-label="Avvertenze sul consumo" role="list">
+    <section class="responsible-consumption" aria-labelledby="responsibility-title">
+      <h2 class="responsibility-title" id="responsibility-title">Bevi responsabilmente</h2>
+      <ul class="consumption-warnings" aria-label="Avvertenze sul consumo" role="list">
       <li class="consumption-warning">
-        <svg class="warning-icon" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false">
+        <svg class="warning-icon" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" role="img" aria-labelledby="adults-only-symbol" focusable="false">
+          <title id="adults-only-symbol">Riservato ai maggiori di 18 anni</title>
           <circle cx="24" cy="24" r="20"/>
-          <text x="24" y="29" text-anchor="middle" fill="currentColor" stroke="none" font-family="Inter,Arial,sans-serif" font-size="14" font-weight="500">&lt;18</text>
-          <path d="m10 38 28-28" stroke="var(--ink)" stroke-width="4.4"/>
-          <path d="m10 38 28-28"/>
+          <text x="24" y="31" text-anchor="middle" fill="currentColor" stroke="none" font-family="Inter,Arial,sans-serif" font-size="20" font-weight="500">18+</text>
         </svg>
-        <p class="warning-label">Vietato ai minori di 18 anni</p>
       </li>
       <li class="consumption-warning">
-        <svg class="warning-icon" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false">
+        <svg class="warning-icon" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" role="img" aria-labelledby="no-driving-symbol" focusable="false">
+          <title id="no-driving-symbol">Non bere se devi guidare</title>
           <circle cx="24" cy="24" r="20"/>
-          <path d="m13 25 3-8h16l3 8M14 33v3m20-3v3M17 28.5h2m10 0h2"/>
-          <rect x="12" y="25" width="24" height="9" rx="2"/>
-          <path d="m10 38 28-28" stroke="var(--ink)" stroke-width="4.4"/>
+          <path d="m13 24 3-8h16l3 8M14 33v4m20-4v4"/>
+          <rect x="12" y="24" width="24" height="10" rx="2.5"/>
+          <circle cx="17" cy="29" r="1.25" fill="currentColor" stroke="none"/>
+          <circle cx="31" cy="29" r="1.25" fill="currentColor" stroke="none"/>
+          <path d="m10 38 28-28" stroke="var(--ink)" stroke-width="4.8"/>
           <path d="m10 38 28-28"/>
         </svg>
-        <p class="warning-label">Non bere se devi guidare</p>
       </li>
       <li class="consumption-warning">
-        <svg class="warning-icon" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false">
+        <svg class="warning-icon" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" role="img" aria-labelledby="no-pregnancy-symbol" focusable="false">
+          <title id="no-pregnancy-symbol">Non bere in gravidanza</title>
           <circle cx="24" cy="24" r="20"/>
-          <circle cx="21" cy="12.5" r="3"/>
-          <path d="M20 18c-2 2-3 5-3 9v4h13c0-5-2-8-6-9l-1-4M19 31l-1 8m8-8 1 8M18 22l-3 6"/>
-          <path d="m10 38 28-28" stroke="var(--ink)" stroke-width="4.4"/>
+          <circle cx="21.5" cy="11.8" r="3.4" fill="currentColor" stroke="none"/>
+          <path d="M19 17c-2 0-3.5 2-3.5 4.5V30h2l-1 6.5h14l-2-5c3-.8 4.2-2.8 4.2-5.3 0-3.6-2.5-6.7-6-7.2L24.8 17H19Z" fill="currentColor" stroke="none"/>
+          <path d="M20 21l3.4 6.2h6.1" stroke="var(--ink)" stroke-width="1.5"/>
+          <path d="M20 36.5V41m6-4.5V41" stroke-width="2"/>
+          <path d="m10 38 28-28" stroke="var(--ink)" stroke-width="4.8"/>
           <path d="m10 38 28-28"/>
         </svg>
-        <p class="warning-label">Non bere in gravidanza</p>
       </li>
-    </ul>
+      </ul>
+    </section>
     <footer class="page-footer">
       <p class="product-facts">Abruzzo · 50 cl · 26% vol</p>
       <a href="mailto:maggioregenziana@gmail.com">Scrivici</a>
