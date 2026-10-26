@@ -1,0 +1,112 @@
+/* MAGGIORE MCMXXXI | Microtipografia editoriale coordinata alla pagina /qr/
+   Le etichette in Cinzel richiamano la brand-year e la brand-kind del QR.
+   Non modifica loghi, titoli principali, testi narrativi o componenti del prodotto. */
+:root {
+  --maggiore-caps: 'Cinzel', Georgia, serif;
+  --maggiore-editorial-gold: #c2a36c;
+  --maggiore-editorial-muted: #b5ad9f;
+}
+
+/* Eyebrow principale: Liquore di genziana · Abruzzo */
+.hero .eyebrow {
+  font-family: var(--maggiore-caps);
+  font-style: normal;
+  font-weight: 400;
+  font-size: clamp(10px, .88vw, 12px);
+  line-height: 1.8;
+  letter-spacing: .13em;
+  text-transform: uppercase;
+  color: var(--maggiore-editorial-gold);
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Indici e didascalie ricorrenti: 01 Manifesto, 02 Storia, 03 Radice, ecc. */
+.index {
+  font-family: var(--maggiore-caps);
+  font-weight: 400;
+  font-size: clamp(10px, .88vw, 12px);
+  line-height: 1.65;
+  letter-spacing: .1em;
+  text-transform: uppercase;
+  color: var(--maggiore-editorial-gold);
+}
+
+/* Navigazione desktop e collegamenti discreti */
+.site-header .nav a,
+.hero .text-link {
+  font-family: var(--maggiore-caps);
+  font-weight: 400;
+  font-size: 11px;
+  line-height: 1.6;
+  letter-spacing: .08em;
+  text-transform: uppercase;
+}
+.site-header .nav a:hover,
+.site-header .nav a:focus-visible,
+.hero .text-link:hover,
+.hero .text-link:focus-visible {
+  color: var(--maggiore-editorial-gold);
+}
+.hero .text-link > span {
+  font-family: 'Inter', Arial, sans-serif;
+  font-size: 1.1em;
+}
+
+/* Scheda del liquore, coordinate nella hero e firma a piè pagina */
+.hero .hero-meta,
+.product .product-copy dt,
+.product .product-copy dd,
+.footer > p {
+  font-family: var(--maggiore-caps);
+  font-style: normal;
+  font-weight: 400;
+  font-size: 11px;
+  line-height: 1.6;
+  letter-spacing: .09em;
+  text-transform: uppercase;
+}
+.hero .hero-meta,
+.footer > p { color: var(--maggiore-editorial-muted); }
+.product .product-copy dd { color: var(--maggiore-editorial-gold); }
+
+/* Didascalie del footer (non il logo e non l'indirizzo email) */
+.footer .footer-brand > span,
+.footer nav[aria-label="Social"]::before,
+.footer nav[aria-label="Informazioni"]::before,
+.footer nav[aria-label="Social"] a,
+.footer nav[aria-label="Informazioni"] a:not([href^="mailto:"]) {
+  font-family: var(--maggiore-caps);
+  font-weight: 400;
+  letter-spacing: .06em;
+}
+.footer .footer-brand > span,
+.footer nav[aria-label="Social"]::before,
+.footer nav[aria-label="Informazioni"]::before {
+  font-size: 11px;
+  line-height: 1.6;
+}
+.footer nav[aria-label="Social"] a,
+.footer nav[aria-label="Informazioni"] a:not([href^="mailto:"]) { font-size: 11px; }
+
+/* Mobile: si mantiene la tipografia ampia già progettata per il menu */
+@media (max-width: 800px) {
+  .site-header .nav a {
+    font-family: 'Cormorant Garamond', Georgia, serif;
+    font-size: 2.2rem;
+    line-height: 1.2;
+    letter-spacing: .04em;
+    text-transform: none;
+  }
+  .hero .eyebrow {
+    font-size: 10px;
+    line-height: 1.7;
+    letter-spacing: .075em;
+  }
+  .hero .hero-meta { font-size: 10px; }
+  .hero .text-link { font-size: 10px; }
+  .footer nav[aria-label="Social"] a { font-size: 10px; }
+}
+
+@media (max-width: 359px) {
+  .hero .eyebrow { font-size: 9.5px; letter-spacing: .04em; }
+}
