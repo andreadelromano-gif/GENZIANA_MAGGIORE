@@ -38,3 +38,131 @@ body.maggiore-360-modal-open { overflow:hidden!important; }
 @media(prefers-reduced-motion:reduce) {
  .hero .maggiore-hero360-actions button { transition:none; }
 }
+
+/* =============================================================
+   MAGGIORE · RAFFINAMENTO 01 — SOLO RAMO DI PROVA
+   Confronto con il sito stabile: hero e visualizzatore invariati
+   nella struttura. Modifichiamo soltanto dimensioni, ritmo e
+   presentazione dei comandi; nessun asset o JS viene alterato.
+   ============================================================= */
+
+/* La bottiglia acquista presenza senza modificare le fotografie. */
+.hero .maggiore-hero360-stage img {
+  transform: translateY(-.8%) scale(1.075);
+  transform-origin: center center;
+}
+.hero .hero-product .bottle-image {
+  transform: translateY(-.8%) scale(1.075);
+  transform-origin: center center;
+}
+
+/* La tipografia originale rimane identica, ma respira meglio. */
+.hero .hero-copy {
+  padding-top: 2.25rem;
+}
+.hero .hero-copy h1 {
+  margin-bottom: 2.85rem;
+}
+.hero .hero-line {
+  line-height: 1.13;
+}
+.hero .text-link {
+  margin-top: 2.35rem;
+}
+
+/* Controlli in microtipografia editoriale, sottili e leggibili. */
+.hero .maggiore-hero360-actions {
+  min-height: 48px;
+  gap: .45rem;
+  font-family: 'Cinzel', Georgia, serif;
+  font-size: 10px;
+  line-height: 1.4;
+  letter-spacing: .09em;
+  color: #b6a588;
+}
+.hero .maggiore-hero360-actions button[data-action="prev"],
+.hero .maggiore-hero360-actions button[data-action="next"] {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  min-width: 40px;
+  min-height: 40px;
+  padding: .4rem;
+  border: 1px solid rgba(194, 163, 108, .25);
+  border-radius: 50%;
+  background: rgba(7, 6, 5, .28);
+  color: #d1b381;
+  font-family: 'Inter', Arial, sans-serif;
+  font-size: 1rem;
+}
+.hero .maggiore-hero360-actions button[data-action="prev"]:hover,
+.hero .maggiore-hero360-actions button[data-action="next"]:hover {
+  background: rgba(194, 163, 108, .09);
+  border-color: rgba(194, 163, 108, .55);
+}
+.hero .maggiore-hero360-expand {
+  min-height: 40px;
+  margin-left: .5rem !important;
+  padding: .55rem .75rem !important;
+  background: rgba(7, 6, 5, .28) !important;
+  border: 1px solid rgba(194, 163, 108, .32) !important;
+  border-radius: 2px !important;
+  color: #d7bc8d !important;
+  font-family: 'Cinzel', Georgia, serif !important;
+  font-size: 10px !important;
+  letter-spacing: .055em !important;
+}
+.hero .maggiore-hero360-expand:hover {
+  border-color: rgba(194, 163, 108, .65) !important;
+  background: rgba(194, 163, 108, .07) !important;
+}
+
+/* Il layout mobile originale rimane asimmetrico: soltanto
+   un poco più spazio alla bottiglia e touch target 44px. */
+@media (max-width: 800px) {
+  .hero .hero-copy { padding-top: 1rem; }
+  .hero .hero-copy h1 { margin-bottom: 1.85rem; }
+  .hero .hero-line { line-height: 1.12; }
+  .hero .text-link { margin-top: 1.7rem; }
+  .hero .hero-product {
+    width: 61%;
+    right: -.65rem;
+    height: 60vh;
+  }
+  .hero .maggiore-hero360-stage img,
+  .hero .hero-product .bottle-image {
+    transform: translateY(-.5%) scale(1.04);
+  }
+  .hero .maggiore-hero360-actions {
+    gap: .2rem;
+    min-height: 48px;
+    margin-left: 0;
+    letter-spacing: 0;
+  }
+  .hero .maggiore-hero360-actions button[data-action="prev"],
+  .hero .maggiore-hero360-actions button[data-action="next"] {
+    min-width: 44px;
+    min-height: 44px;
+    padding: .45rem;
+  }
+  .hero .maggiore-hero360-expand {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 44px;
+    min-height: 44px;
+    margin-left: .2rem !important;
+    padding: .45rem .55rem !important;
+    font-size: 10px !important;
+  }
+}
+@media (max-width: 420px) {
+  .hero .hero-product { width: 63%; right: -1rem; }
+  .hero .maggiore-hero360-expand { width: 44px; padding: .45rem !important; }
+  /* Conserva il pulsante accessibile, riducendo il testo solo
+     dove l'area del viewer è particolarmente stretta. */
+  .hero .maggiore-hero360-expand span { display: none; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .hero .maggiore-hero360-actions button { transition: none; }
+}
