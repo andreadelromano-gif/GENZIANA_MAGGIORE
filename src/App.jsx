@@ -1,5 +1,6 @@
 import { useEffect, useState } from 'react'
 import './App.css'
+import './HeroV2.css'
 
 import agenda from './assets/045c9ed5-306b-470d-acef-a6a375156cb9.jpg'
 import territory from './assets/33ed28ae-d21f-43c7-b8ef-5fbd9d17c63f.png'
@@ -30,7 +31,7 @@ function Header(){
 }
 function Bottle({large=false}){return <div className="bottle-wrap"><Image name="bottle-front.png" alt="Bottiglia di MAGGIORE MCMXXXI, liquore di genziana" className="bottle-image"/><div className={'bottle-fallback '+(large?'large':'')} aria-hidden="true"><span>MAGGIORE</span><b>GENZIANA</b><small>ABRUZZO</small></div></div>}
 function App(){return <main id="top">
-  <section className="hero" aria-labelledby="hero-title"><Header/><div className="hero-copy"><p className="eyebrow">Liquore di genziana · Abruzzo</p><h1 id="hero-title">GENZIANA<br/><span>MAGGIORE</span></h1><p className="hero-line">Liquore di genziana.<br/>Radici forti.<br/>Carattere deciso.</p><a className="text-link" href="#storia">Scopri la storia <span>↓</span></a></div><div className="hero-product"><Bottle/></div><p className="hero-meta">ABRUZZO <i/> 50 CL <i/> 26% VOL</p><div className="mountains" aria-hidden="true"><i/><i/><i/></div></section>
+  <section className="hero" aria-labelledby="hero-title"><Header/><div className="hero-copy"><p className="eyebrow">Liquore di genziana · Abruzzo</p><h1 id="hero-title">LE RADICI<br/><em>NON SI INVENTANO.</em></h1><p className="hero-line">MAGGIORE MCMXXXI.<br/>Una storia di famiglia.<br/>Un carattere d’Abruzzo.</p><a className="text-link" href="#storia">Scopri la storia <span>↓</span></a></div><div className="hero-product"><Bottle/></div><p className="hero-meta">ABRUZZO <i/> 50 CL <i/> 26% VOL</p><div className="mountains" aria-hidden="true"><i/><i/><i/></div></section>
   <section className="manifesto section" aria-labelledby="manifesto-title"><p className="index">01 — Manifesto</p><div className="manifesto-grid"><h2 id="manifesto-title">DALLA TERRA.<br/><em>DALLA MEMORIA.</em></h2><p>Una radice di genziana, il vino Cococciola e una ricetta custodita in famiglia. Maggiore nasce in Abruzzo, dove l'amaro non è un difetto: è carattere.</p></div></section>
   <section id="storia" className="story" aria-labelledby="story-title">
     <div className="story-open section"><div><p className="index">02 — La nostra storia</p><h2 id="story-title">Tutto parte<br/>da una radice.</h2></div><div className="prose"><p>Mi chiamo Andrea Del Romano e sono cresciuto con la genziana in casa.</p><p>A prepararla era mio nonno, Maggiore.</p><p>Un uomo legato alla terra, all'orto e, in anni precedenti ai miei ricordi, anche a una sua vigna di Cococciola.</p></div></div>
