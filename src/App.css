@@ -315,13 +315,13 @@
 }
 
 
-/* MAGGIORE | STUDIO 02 — tipografia del manifesto finale su mobile.
-   Intervento limitato alla scala tipografica e all'interlinea,
-   senza modifiche a font, testo, colori o layout desktop. */
+/* MAGGIORE | STUDIO 03 — spaziatura e proporzioni del manifesto mobile.
+   Identici font, corsivo originale "NON SI", colori, testi e layout desktop.
+   Solo scala leggermente riequilibrata e maggiore respiro verticale. */
 @media (max-width: 800px) {
   .closing p {
-    font-size: clamp(3.35rem, 15vw, 6rem);
-    line-height: 1.10;
-    letter-spacing: -.055em;
+    font-size: clamp(3.1rem, 14.6vw, 5.75rem);
+    line-height: 1.22;
+    letter-spacing: -.05em;
   }
 }
