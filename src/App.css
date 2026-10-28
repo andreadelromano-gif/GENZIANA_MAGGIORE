@@ -315,11 +315,13 @@
 }
 
 
-/* MAGGIORE | PROVA MOBILE — solo ridimensionamento frase finale.
-   Non modifica testi, font, colori o layout desktop. */
-@media (max-width: 420px) {
+/* MAGGIORE | STUDIO 02 — tipografia del manifesto finale su mobile.
+   Intervento limitato alla scala tipografica e all'interlinea,
+   senza modifiche a font, testo, colori o layout desktop. */
+@media (max-width: 800px) {
   .closing p {
-    font-size: clamp(3rem, 12vw, 4.4rem);
-    line-height: 1.05;
+    font-size: clamp(3.35rem, 15vw, 6rem);
+    line-height: 1.10;
+    letter-spacing: -.055em;
   }
 }
