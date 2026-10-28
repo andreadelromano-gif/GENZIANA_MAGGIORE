@@ -38,3 +38,15 @@ body.maggiore-360-modal-open { overflow:hidden!important; }
 @media(prefers-reduced-motion:reduce) {
  .hero .maggiore-hero360-actions button { transition:none; }
 }
+
+/* MAGGIORE · Raffinamento 01: soli ridimensionamenti del prodotto.
+   Immagini, UI del visualizzatore, colori, tipografia e sezioni invariati. */
+.hero .maggiore-hero360-stage img {
+  transform: scale(1.075);
+  transform-origin: center center;
+}
+@media (max-width: 800px) {
+  .hero .maggiore-hero360-stage img {
+    transform: scale(1.04);
+  }
+}
