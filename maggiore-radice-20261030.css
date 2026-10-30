@@ -1,0 +1,3 @@
+/* Sezione 03: nuova immagine unica, senza loghi sovrapposti */
+.root-section > img.cover.root-restored{filter:none!important;opacity:1!important;object-position:center center;}
+.root-section:has(> img.cover.root-restored){background:#080705;}
