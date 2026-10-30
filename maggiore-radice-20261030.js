@@ -1,4 +1,4 @@
 /* MAGGIORE · sezione 03 · sostituzione della texture con immagine corretta */
-(()=>{'use strict';const src='/assets/maggiore-radice-20261030.webp';let applied=false;
+(()=>{'use strict';const src='/assets/maggiore-radice-hd-20261030.webp';let applied=false;
 function swap(){const img=document.querySelector('.root-section > img.cover');if(!img)return false;if(applied)return true;applied=true;const preload=new Image();preload.onload=()=>{img.src=src;img.alt='Radici di genziana e simbolo M originale MAGGIORE senza puntini';img.classList.add('root-restored');};preload.src=src;return true;}
 if(!swap()){const observer=new MutationObserver(()=>{if(swap())observer.disconnect()});observer.observe(document.documentElement,{subtree:true,childList:true});document.addEventListener('DOMContentLoaded',()=>{if(swap())observer.disconnect()},{once:true})}})();
