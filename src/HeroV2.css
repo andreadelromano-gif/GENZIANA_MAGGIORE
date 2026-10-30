@@ -1,0 +1,167 @@
+/* MAGGIORE — direzione editoriale V2. SOLO RAMO DI PROVA.
+   Non altera componenti 360, assets, etichetta, QR o sezioni successive. */
+.hero.hero {
+  grid-template-columns: minmax(0, .95fr) minmax(0, 1.05fr);
+  gap: clamp(1.5rem, 4vw, 5rem);
+  min-height: 100svh;
+  padding-top: 9rem;
+  padding-bottom: 5rem;
+  background: #050505 !important;
+  overflow: clip;
+}
+.hero.hero::after {
+  content:"";
+  position:absolute;
+  inset:7rem 0 0;
+  z-index:0;
+  background:radial-gradient(ellipse 48% 60% at 76% 47%,rgba(115,79,46,.095),transparent 73%);
+  pointer-events:none;
+}
+.hero.hero .hero-copy {position:relative;z-index:3;max-width:640px;padding:0;}
+.hero.hero .eyebrow {
+  font-family:'Cinzel',Georgia,serif;
+  color:#ba9c70;
+  letter-spacing:.13em;
+  font-size:clamp(10px,.78vw,12px);
+  text-transform:uppercase;
+  margin-bottom:clamp(3rem,7vh,6rem);
+}
+.hero.hero .eyebrow span {margin:0 .6rem;color:#64533b;}
+.hero.hero .hero-v2-chapter {
+  font-family:'Cinzel',Georgia,serif;
+  font-size:clamp(10px,.79vw,12px);
+  letter-spacing:.12em;
+  color:#a39889;
+  text-transform:uppercase;
+  margin-bottom:1.1rem;
+}
+.hero.hero .hero-v2-chapter span {color:#a78a5d;margin:0 .35rem;}
+.hero.hero .hero-copy h1 {
+  margin:0;
+  font-family:'Cormorant Garamond',Georgia,serif;
+  font-size:clamp(5rem,8.3vw,10rem);
+  font-weight:400;
+  letter-spacing:-.065em;
+  line-height:.88;
+  color:#ede5d8;
+}
+.hero.hero .hero-v2-year {
+  font-family:'Cinzel',Georgia,serif;
+  font-size:clamp(.85rem,1.1vw,1.1rem);
+  color:#c2a36c;
+  letter-spacing:.53em;
+  margin-top:1.1rem;
+}
+.hero.hero .hero-v2-rule {
+  width:min(100%,320px);height:1px;
+  background:linear-gradient(90deg,rgba(194,163,108,.75),rgba(194,163,108,0));
+  margin:clamp(2rem,4vh,3.5rem) 0 1.7rem;
+}
+.hero.hero .hero-line {
+  font-family:'Cormorant Garamond',Georgia,serif;
+  font-size:clamp(1.7rem,2.25vw,2.5rem);
+  font-weight:400;
+  line-height:1.2;
+  color:#d1c4b0;
+  margin:0;
+}
+.hero.hero .hero-v2-manifesto {
+  color:#b99c6e;
+  font-family:'Cinzel',Georgia,serif;
+  font-size:clamp(10px,.78vw,12px);
+  line-height:1.7;
+  letter-spacing:.11em;
+  margin:1.5rem 0 0;
+}
+.hero.hero .text-link {
+  display:inline-flex;
+  font-family:'Cinzel',Georgia,serif;
+  color:#eadcc7;
+  border-bottom:1px solid rgba(194,163,108,.55);
+  margin:2.2rem 0 0;
+  padding-bottom:.8rem;
+  letter-spacing:.09em;
+}
+.hero.hero .hero-product {
+  position:relative;
+  right:auto;bottom:auto;
+  align-self:center;
+  height:min(78svh,860px);
+  min-height:540px;
+  width:100%;
+  opacity:1;
+  z-index:2;
+}
+.hero.hero .maggiore-hero360-actions {
+  color:#b9aa92;
+  min-height:48px;
+  font-family:'Cinzel',Georgia,serif;
+  font-size:10px;
+  letter-spacing:.06em;
+  gap:.5rem;
+}
+.hero.hero .maggiore-hero360-actions button {min-width:42px;min-height:42px;}
+.hero.hero .maggiore-hero360-expand {
+  border:1px solid rgba(194,163,108,.35)!important;
+  background:rgba(0,0,0,.28)!important;
+  padding:.65rem .75rem!important;
+  font-size:10px!important;
+}
+.hero.hero .hero-meta {
+  right:max(1.5rem,calc((100vw - 1240px)/2));
+  bottom:1.8rem;
+  color:#aa9c87;
+}
+@media (prefers-reduced-motion:no-preference) {
+  .hero.hero .hero-copy {animation:maggiore-hero-arrive .75s ease-out both;}
+  @keyframes maggiore-hero-arrive {
+    from {opacity:0;transform:translateY(12px)}
+    to {opacity:1;transform:translateY(0)}
+  }
+}
+@media(max-width:800px) {
+  .hero.hero {
+    display:flex;
+    flex-direction:column;
+    align-items:stretch;
+    min-height:100svh;
+    gap:0;
+    padding:6.7rem 1.35rem 2rem;
+  }
+  .hero.hero::after {inset:5rem 0 0;background:radial-gradient(ellipse at 50% 63%,rgba(115,79,46,.10),transparent 65%);}
+  .hero.hero .hero-copy {text-align:center;max-width:100%;}
+  .hero.hero .eyebrow {font-size:10px;letter-spacing:.08em;margin-bottom:1.6rem;}
+  .hero.hero .hero-v2-chapter {font-size:10px;margin-bottom:.75rem;}
+  .hero.hero .hero-copy h1 {font-size:clamp(3.75rem,13.2vw,7rem);line-height:.88;}
+  .hero.hero .hero-v2-year {font-size:11px;letter-spacing:.35em;margin-top:.8rem;}
+  .hero.hero .hero-v2-rule {max-width:210px;margin:1.4rem auto 1rem;background:linear-gradient(90deg,transparent,#b89a69,transparent);}
+  .hero.hero .hero-line {font-size:clamp(1.4rem,4.5vw,2rem);line-height:1.15;}
+  .hero.hero .hero-v2-manifesto {font-size:10px;margin:.9rem 0 0;}
+  .hero.hero .text-link {font-size:10px;margin:1.1rem 0 0;padding-bottom:.5rem;}
+  .hero.hero .hero-product {
+    position:relative;
+    right:auto;bottom:auto;
+    width:100%;
+    flex:0 0 auto;
+    height:clamp(300px,46svh,570px);
+    min-height:0;
+    align-self:center;
+    margin:.5rem 0 .4rem;
+  }
+  .hero.hero .maggiore-hero360-help {display:none;}
+  .hero.hero .maggiore-hero360-actions {min-height:46px;font-size:10px;gap:.2rem;letter-spacing:0;}
+  .hero.hero .maggiore-hero360-actions button {min-width:42px;min-height:42px;padding:.45rem!important;}
+  .hero.hero .maggiore-hero360-expand {font-size:10px!important;padding:.5rem!important;}
+  .hero.hero .maggiore-hero360-expand span {font-size:10px;}
+  .hero.hero .hero-meta {
+    position:relative;inset:auto;
+    display:flex;justify-content:center;
+    writing-mode:horizontal-tb;transform:none;
+    margin:auto 0 0;padding-top:.8rem;font-size:10px;
+  }
+}
+@media(max-width:420px) {
+  .hero.hero {padding:6.7rem 1rem 1.5rem;}
+  .hero.hero .hero-copy h1 {font-size:clamp(3.5rem,12.5vw,4.2rem);}
+  .hero.hero .hero-product {height:clamp(285px,43svh,460px);right:auto;width:100%;}
+}
