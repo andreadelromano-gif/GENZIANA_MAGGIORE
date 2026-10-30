@@ -325,3 +325,24 @@
     letter-spacing: -.05em;
   }
 }
+
+
+/* MAGGIORE | STUDIO 04 — proporzioni delle titolazioni Genziana e Territorio.
+   Solo presentazione su smartphone/tablet, nessuna modifica a font,
+   colori, testi, immagini o struttura delle sezioni. BOZZA NON PUBBLICATA. */
+@media (max-width: 800px) {
+  .root-content h2 {
+    font-size: clamp(5.2rem, 24vw, 8.5rem);
+    line-height: .86;
+    letter-spacing: -.06em;
+    margin: .08em 0 .28em 0;
+  }
+  .territory h2 {
+    font-size: clamp(3.5rem, 17vw, 7.25rem);
+    line-height: .90;
+    letter-spacing: -.055em;
+  }
+  .territory .maiella {
+    margin-top: .65rem;
+  }
+}
