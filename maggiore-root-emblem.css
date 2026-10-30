@@ -1,0 +1,41 @@
+/* MAGGIORE MCMXXXI — simbolo ufficiale nella sezione 03, senza puntini.
+   Solo restauro locale, nessuna modifica al resto del sito. */
+.root-section > img.cover {
+  /* Rimuove con transizione morbida il simbolo errato inglobato nella texture. */
+  -webkit-mask-image: radial-gradient(
+    ellipse var(--root-mask-x,166px) var(--root-mask-y,177px)
+    at var(--root-logo-x,45.84%) var(--root-logo-y,79.31%),
+    transparent 0%, transparent 68%, #000 100%
+  );
+  mask-image: radial-gradient(
+    ellipse var(--root-mask-x,166px) var(--root-mask-y,177px)
+    at var(--root-logo-x,45.84%) var(--root-logo-y,79.31%),
+    transparent 0%, transparent 68%, #000 100%
+  );
+}
+.root-section > .maggiore-root-official {
+  position:absolute;
+  z-index:1;
+  left:var(--root-logo-x,45.84%);
+  top:var(--root-logo-y,79.31%);
+  transform:translate(-50%,-50%);
+  width:var(--root-logo-size,246px);
+  aspect-ratio:1;
+  display:grid;
+  place-items:center;
+  pointer-events:none;
+  user-select:none;
+}
+.root-section > .maggiore-root-official img {
+  display:block;
+  width:100%;
+  height:100%;
+  object-fit:contain;
+  opacity:.63;
+  filter:brightness(.73) saturate(.82);
+  pointer-events:none;
+  -webkit-user-drag:none;
+}
+@media (prefers-contrast:more) {
+  .root-section > .maggiore-root-official img { opacity:.85; }
+}
