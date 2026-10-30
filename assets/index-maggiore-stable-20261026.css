@@ -133,3 +133,66 @@
 @media(max-width:800px) {
   .footer.footer nav[aria-label="Social"] a { font-size: 10px; }
 }
+
+
+/* MAGGIORE · Archivio di famiglia · ricetta volutamente celata.
+   La fotografia rimane riconoscibile, ma la grafia non deve essere leggibile.
+   ATTENZIONE: il CSS non elimina i dati del file originale. */
+.agenda {
+  isolation: isolate;
+}
+.agenda > img {
+  grid-column: 1;
+  grid-row: 1;
+  min-width: 0;
+  filter: blur(17px) brightness(.68) saturate(.73) sepia(.13);
+  transform: rotate(-1.15deg) scale(.99);
+  user-select: none;
+  -webkit-user-drag: none;
+  pointer-events: none;
+}
+.agenda > figcaption {
+  grid-column: 2;
+  grid-row: 1;
+  z-index: 2;
+}
+.agenda::after {
+  content: "CUSTODITA NEL TEMPO";
+  grid-column: 1;
+  grid-row: 1;
+  justify-self: center;
+  align-self: center;
+  z-index: 1;
+  width: min(79%, 335px);
+  padding: 29px 15px;
+  border-block: 1px solid rgba(197,158,98,.56);
+  color: #dec79c;
+  background: linear-gradient(90deg, rgba(9,8,7,.28), rgba(9,8,7,.64) 20%, rgba(9,8,7,.64) 80%, rgba(9,8,7,.28));
+  box-shadow: 0 0 75px 28px rgba(11,9,7,.32);
+  text-align: center;
+  font-family: "Cinzel", Georgia, serif;
+  font-size: clamp(10px, 1.05vw, 12px);
+  letter-spacing: .155em;
+  line-height: 1.75;
+  font-weight: 400;
+  pointer-events: none;
+}
+@media (max-width: 800px) {
+  .agenda > img {
+    grid-column: 1;
+    grid-row: 2;
+    transform: none;
+    filter: blur(15px) brightness(.68) saturate(.73) sepia(.13);
+  }
+  .agenda > figcaption {
+    grid-column: 1;
+    grid-row: 1;
+  }
+  .agenda::after {
+    grid-column: 1;
+    grid-row: 2;
+    padding: 22px 10px;
+    letter-spacing: .1em;
+    font-size: 10px;
+  }
+}
