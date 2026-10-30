@@ -328,3 +328,6 @@
 
 /* Nuova texture a immagine unica, senza sovrapposizioni */
 .root-section > img.cover{filter:none;opacity:1;}
+
+/* Sezione 03 — immagine HD con M integrata: colori e nitidezza originali */
+.root-section > img.cover.root-restored{filter:none!important;opacity:1!important;object-position:center center}
