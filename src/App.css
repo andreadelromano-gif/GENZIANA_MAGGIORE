@@ -325,3 +325,6 @@
     letter-spacing: -.05em;
   }
 }
+
+/* Nuova texture a immagine unica, senza sovrapposizioni */
+.root-section > img.cover{filter:none;opacity:1;}

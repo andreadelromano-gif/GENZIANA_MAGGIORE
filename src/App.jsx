@@ -15,7 +15,7 @@ const images = {
   'bottle-front.png': bottleFront,
   'bottle-front-back.png': bottlePair,
   'root-story.jpg': rootsPoster,
-  'root-texture-dark.jpg': rootsTexture,
+  'root-texture-dark.jpg': '/assets/maggiore-radice-20261030.webp',
   'territorio-maiella.jpg': territory,
 }
 function Image({name, alt, className=''}) {
