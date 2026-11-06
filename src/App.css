@@ -394,3 +394,16 @@
     font-size: 10px;
   }
 }
+
+
+/* MAGGIORE · prima fotografia reale della lavorazione (06/11/2026) */
+.maceration-section{background:#0b0908;color:#e9e0d2;padding:7rem max(1.5rem,calc((100vw - 1240px)/2));border-top:1px solid rgba(184,150,102,.16)}
+.maceration-layout{max-width:1150px;margin:0 auto;display:grid;grid-template-columns:minmax(0,5fr) minmax(0,4fr);align-items:center;gap:clamp(2.5rem,8vw,9rem)}
+.maceration-frame{margin:0;max-width:480px}
+.maceration-frame img{display:block;width:100%;height:auto;aspect-ratio:3 / 4;object-fit:cover;filter:none;box-shadow:none;border:1px solid rgba(194,168,128,.18)}
+.maceration-frame figcaption{margin-top:1.2rem;font-family:inherit;font-size:.64rem;letter-spacing:.19em;color:#a9967b}
+.maceration-copy .index{margin-bottom:2rem}
+.maceration-copy h2{font-size:clamp(3.4rem,5.8vw,6.7rem);line-height:.91;letter-spacing:-.045em;margin:0 0 2.4rem}
+.maceration-copy h2 em{font-weight:400;color:#b99665}
+.maceration-copy>p:last-child{max-width:25rem;color:#c7bba9;line-height:1.85;font-size:1rem}
+@media(max-width:800px){.maceration-section{padding:5rem 1.35rem}.maceration-layout{grid-template-columns:1fr;gap:3.2rem}.maceration-frame{max-width:min(100%,520px)}.maceration-copy h2{font-size:clamp(3.7rem,12vw,5.3rem)}}
