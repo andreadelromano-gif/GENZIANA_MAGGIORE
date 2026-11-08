@@ -1,0 +1,209 @@
+
+/* MAGGIORE MCMXXXI | Rifinitura responsive mobile — 08.11.2026.
+   Solo viewport stretti: nessun cambiamento al desktop, al logo o ai contenuti. */
+@media (max-width: 800px) {
+  html { scroll-padding-top: 5.5rem; }
+  body, #root, main { max-width: 100%; }
+  .section { padding-inline: clamp(1.25rem, 5vw, 2rem); }
+  .site-header { padding-inline: clamp(1.25rem, 5vw, 2rem); }
+  .brand { min-width: 0; }
+  .brand img { flex: 0 0 auto; width: 40px; height: 40px; object-fit: contain; }
+  .site-header .nav a { line-height: 1.25; }
+
+  /* Homepage: la bottiglia non invade il titolo, anche su schermi bassi. */
+  .hero {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    min-height: 100svh;
+    height: auto;
+    padding: calc(7.25rem + env(safe-area-inset-top, 0px)) clamp(1.25rem, 5vw, 2rem) calc(4.75rem + env(safe-area-inset-bottom, 0px));
+    overflow: hidden;
+  }
+  .hero .hero-copy { flex: 0 0 auto; width: 100%; padding-top: 0; }
+  .hero h1 {
+    max-width: 100%;
+    font-size: clamp(3rem, 13vw, 5.75rem);
+    letter-spacing: -.052em;
+    line-height: .86;
+    margin-bottom: clamp(1.5rem, 4vw, 2rem);
+  }
+  .hero h1 span { margin-left: clamp(.3rem, 2vw, 1.2rem); }
+  .hero .hero-line {
+    margin-left: clamp(.3rem, 2vw, 1.2rem);
+    max-width: 21rem;
+    font-size: clamp(1.32rem, 5.5vw, 1.9rem);
+    line-height: 1.16;
+  }
+  .hero .text-link { margin-top: 1.6rem; margin-left: clamp(.3rem, 2vw, 1.2rem); }
+  .hero .hero-product {
+    position: relative;
+    top: auto;
+    right: auto;
+    bottom: auto;
+    left: auto;
+    align-self: center;
+    flex: 0 0 auto;
+    width: min(100%, 510px);
+    height: clamp(300px, 46svh, 520px);
+    min-height: 0;
+    margin-top: clamp(1rem, 3.5vw, 2rem);
+    opacity: 1;
+    z-index: 2;
+  }
+  .hero .maggiore-hero360 { width: 100%; max-width: 100%; }
+  .hero .maggiore-hero360-stage { min-height: 0; }
+  .hero .maggiore-hero360-stage img {
+    width: 100%;
+    height: 100%;
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+    transform: none !important;
+  }
+  .hero .maggiore-hero360-actions {
+    width: 100%;
+    min-height: 46px;
+    gap: .25rem;
+    margin-left: 0;
+    justify-content: center;
+  }
+  .hero .maggiore-hero360-actions button {
+    min-width: 44px;
+    min-height: 44px;
+    padding: .5rem .65rem;
+    font-size: 1rem;
+  }
+  .hero .maggiore-hero360-expand {
+    min-height: 44px;
+    margin-left: .35rem !important;
+    padding: .55rem .75rem !important;
+    font-size: .65rem !important;
+  }
+  .hero .maggiore-hero360-expand span { font-size: .65rem; }
+  .hero .hero-meta {
+    writing-mode: horizontal-tb;
+    transform: none;
+    left: clamp(1.25rem, 5vw, 2rem);
+    right: auto;
+    bottom: calc(1.35rem + env(safe-area-inset-bottom, 0px));
+    flex-wrap: wrap;
+    gap: .65rem;
+    font-size: .64rem;
+    letter-spacing: .13em;
+  }
+  .hero .hero-meta i { height: .85rem; }
+
+  /* Ritmo tipografico coerente, titoli mai tagliati. */
+  .manifesto h2 { font-size: clamp(2.7rem, 11.5vw, 5rem); line-height: .94; }
+  .story-open h2 { font-size: clamp(3rem, 12vw, 5.5rem); line-height: .94; }
+  .story-open, .shared, .memory, .turn-grid, .birth { gap: clamp(2.5rem, 7vw, 4rem); }
+  .prose, .shared>div { font-size: 1rem; line-height: 1.8; }
+  .grandfather { gap: 2rem; padding-inline: clamp(1.25rem, 5vw, 2rem); }
+  .grandfather-photo { height: clamp(390px, 62svh, 680px); }
+  .grandfather img { object-position: center 38%; }
+  .grandfather figcaption span, .agenda figcaption span { font-size: clamp(2.15rem, 7vw, 3.5rem); }
+  .shared>p { font-size: clamp(2.3rem, 8.7vw, 4.5rem); line-height: 1.08; }
+  .hand { font-size: clamp(2.7rem, 13.5vw, 5.3rem); line-height: .98; }
+  .memory .like { font-size: clamp(3rem, 10vw, 5.2rem); }
+  .turn-grid blockquote { font-size: clamp(2.65rem, 9vw, 5rem); }
+  .birth .birth-lines { font-size: clamp(2.3rem, 8.5vw, 4rem); }
+  .birth .signature { margin-top: 1.5rem; font-size: clamp(1.5rem, 5.7vw, 2rem); }
+  .agenda { padding-inline: clamp(1.25rem, 5vw, 2rem); }
+
+  /* Cisterna: testo in area protetta, foto piena senza schiacciamenti. */
+  .story-image.story-image-cisterna { min-height: 78svh; }
+  .story-image.story-image-cisterna>img { object-position: center 60%; }
+  .story-image.story-image-cisterna>p {
+    margin: clamp(4.75rem, 11svh, 7rem) clamp(1.25rem, 5vw, 2rem) 0;
+    width: calc(100% - 2 * clamp(1.25rem, 5vw, 2rem));
+    font-size: clamp(2.25rem, 9vw, 4.3rem);
+    line-height: 1.03;
+    max-width: 38rem;
+    text-wrap: balance;
+    overflow-wrap: normal;
+  }
+  .root-section.root-section-cisterna, .root-section.root-section-cisterna .root-content { min-height: 85svh; }
+  .root-section.root-section-cisterna .root-content {
+    padding-inline: clamp(1.25rem, 5vw, 2rem);
+    padding-top: clamp(6.5rem, 12svh, 9rem);
+  }
+  .root-section.root-section-cisterna .root-content h2 {
+    font-size: clamp(3.25rem, 12vw, 6rem);
+    line-height: .95;
+    max-width: min(100%, 24rem);
+    overflow-wrap: normal;
+    text-wrap: balance;
+  }
+  .root-section.root-section-cisterna .root-copy {
+    max-width: min(100%, 22rem);
+    margin-top: clamp(1.5rem, 5vw, 2rem);
+    font-size: 1rem;
+    line-height: 1.7;
+  }
+
+  .cococciola h2 { font-size: clamp(3rem, 11vw, 5rem); line-height: .95; }
+  .territory { min-height: 85svh; }
+  .territory-copy { padding-inline: clamp(1.25rem, 5vw, 2rem); }
+  .territory h2 { max-width: 100%; font-size: clamp(3.8rem, 15vw, 6.9rem); line-height: .85; letter-spacing: -.065em; }
+  .territory-copy>p:last-child { line-height: 1.75; }
+
+  /* Le due foto del prodotto restano visibili, senza tagli laterali. */
+  .product { grid-template-columns: 1fr; gap: 2rem; }
+  .product-copy { min-width: 0; grid-row: 1; }
+  .product h2 { font-size: clamp(3.3rem, 11vw, 5.6rem); line-height: .91; }
+  .product-visual { grid-row: 2; width: 100%; min-width: 0; height: auto; min-height: 0; margin: 1rem 0 0; }
+  .product .product-visual .maggiore-static-duo {
+    width: 100%;
+    height: clamp(240px, 45svh, 510px);
+    min-height: 0;
+    max-width: 100%;
+    gap: .35rem;
+  }
+  .product .product-visual .maggiore-static-duo img {
+    min-width: 0;
+    width: 100%;
+    max-width: 100%;
+    height: 100%;
+    max-height: 100%;
+    object-fit: contain;
+  }
+  .closing p { font-size: clamp(2.8rem, 13.8vw, 6rem); line-height: 1.13; }
+  .footer { gap: 2rem; padding-inline: clamp(1.25rem, 5vw, 2rem); }
+  .footer nav[aria-label="Social"] a,
+  .footer nav[aria-label="Informazioni"] a[href^="mailto:"] { min-height: 44px; }
+}
+@media (max-width: 600px) {
+  .footer { grid-template-columns: minmax(0,1fr); }
+  .footer-brand, .footer>p { grid-column: 1; }
+  .footer nav[aria-label="Social"],
+  .footer nav[aria-label="Informazioni"] { min-width: 0; max-width: 100%; }
+  .footer nav[aria-label="Informazioni"] a[href^="mailto:"] { overflow-wrap: anywhere; }
+  .cococciola { grid-template-columns: 1fr; }
+  .cococciola .vertical {
+    position: absolute;
+    top: 3.5rem;
+    right: .5rem;
+    grid-row: auto;
+    grid-column: auto;
+    opacity: .14;
+    pointer-events: none;
+  }
+  .cococciola .cocco-copy, .cococciola .earth { grid-column: 1; }
+  .cococciola .earth { width: min(65vw, 270px); }
+}
+@media (max-width: 375px) {
+  .hero h1 { font-size: clamp(2.7rem, 12.7vw, 3.2rem); }
+  .hero .hero-product { height: clamp(260px, 42svh, 430px); }
+  .hero .hero-line { font-size: 1.3rem; }
+  .story-image.story-image-cisterna>p { font-size: clamp(2.15rem, 8.8vw, 2.6rem); }
+  .root-section.root-section-cisterna .root-content h2 { font-size: clamp(3rem, 11vw, 3.6rem); }
+  .territory h2 { font-size: clamp(3.35rem, 14vw, 4.5rem); }
+  .product h2 { font-size: clamp(3rem, 10.7vw, 4rem); }
+}
+@media (max-width: 800px) and (max-height: 680px) {
+  .hero { padding-top: calc(6.5rem + env(safe-area-inset-top,0px)); }
+  .hero .hero-product { height: clamp(235px, 40svh, 360px); }
+  .root-section.root-section-cisterna .root-content { padding-top: 5.5rem; }
+  .story-image.story-image-cisterna>p { margin-top: 4.5rem; }
+}
